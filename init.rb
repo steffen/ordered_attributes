@@ -1,1 +1,1 @@
-require 'active_attributes'
+require 'ordinary_attributes'
