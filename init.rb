@@ -1,1 +1,1 @@
-require 'ordinary_attributes'
+require 'ordered_attributes'
