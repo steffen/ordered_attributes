@@ -1,4 +1,4 @@
-module ActiveAttributes #:nodoc:
+module OrderedAttributes #:nodoc:
   
   def self.included(base)
     base.extend ClassMethods
@@ -36,11 +36,8 @@ module ActiveAttributes #:nodoc:
       self.attribute_groups = groups
       
     end
-    
-    def attr_from(groups = {})
-    end
 
   end
 end
 
-ActiveRecord::Base.send :include, ActiveAttributes
+ActiveRecord::Base.send :include, OrderedAttributes
