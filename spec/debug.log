@@ -1,0 +1,315 @@
+# Logfile created on Mon Apr 28 19:11:43 -0400 2008 by logger.rb/1.5.2.9
+  [4;36;1mSQL (0.000216)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: companies: DROP TABLE companies[0m
+
+  [4;36;1mSQL (0.301861)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.309680)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.288388)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+
+  [4;35;1mSQL (0.287050)[0m   [0mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000203)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.360124)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.288090)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.297321)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000220)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.364465)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.287860)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.296842)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000205)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.308855)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.276754)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.264039)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;35;1mSQL (0.000364)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `to_str'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `to_s'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `message'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `dump_failure'[0m
+  [4;36;1mSQL (0.000204)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.364318)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.288102)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.286148)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;35;1mSQL (0.000344)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `to_str'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `to_s'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `message'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `dump_failure'[0m
+  [4;36;1mSQL (0.000206)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.319353)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.300794)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.295190)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;35;1mSQL (0.000406)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `to_str'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `to_s'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `message'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `dump_failure'[0m
+  [4;36;1mSQL (0.000208)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.359453)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.432139)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.286872)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000202)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.357076)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.265119)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.263793)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000209)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.310994)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.287925)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.297479)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000204)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.337423)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.298972)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.275483)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000234)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.384042)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.265596)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.275136)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000347)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.321538)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.287874)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: people: DROP TABLE people[0m
+
+  [4;36;1mSQL (0.287236)[0m   [0;1mCREATE TABLE people ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.318907)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000200)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.300251)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.265718)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.265277)[0m   [0mDROP TABLE people[0m
+
+  [4;36;1mSQL (0.310350)[0m   [0;1mCREATE TABLE people ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.275309)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000201)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.362034)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.454568)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.287734)[0m   [0mDROP TABLE people[0m
+
+  [4;36;1mSQL (0.276880)[0m   [0;1mCREATE TABLE people ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.297554)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000207)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.374191)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.454634)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.287602)[0m   [0mDROP TABLE people[0m
+
+  [4;36;1mSQL (0.287954)[0m   [0;1mCREATE TABLE people ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.297435)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000197)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.317238)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.421243)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.309757)[0m   [0mDROP TABLE people[0m
+
+  [4;36;1mSQL (0.299133)[0m   [0;1mCREATE TABLE people ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.275465)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000199)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.310781)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.432212)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.309925)[0m   [0mDROP TABLE people[0m
+
+  [4;36;1mSQL (0.298965)[0m   [0;1mCREATE TABLE people ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.297556)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000224)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.392931)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.454561)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.287442)[0m   [0mDROP TABLE people[0m
+
+  [4;36;1mSQL (0.299058)[0m   [0;1mCREATE TABLE people ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.286330)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;35;1mSQL (0.000394)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `to_str'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `to_s'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `message'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `dump_failure'[0m
+  [4;36;1mSQL (0.000309)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+    [36;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `to_str'[0m
+    [36;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `to_s'[0m
+    [36;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `message'[0m
+    [36;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `dump_failure'[0m
+  [4;35;1mSQL (0.000285)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `to_str'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `to_s'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `message'[0m
+    [35;2mvendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb:36:in `dump_failure'[0m
+  [4;36;1mSQL (0.000198)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.353171)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.454721)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.287675)[0m   [0mDROP TABLE people[0m
+
+  [4;36;1mSQL (0.276603)[0m   [0;1mCREATE TABLE people ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.275599)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000202)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.394724)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.287971)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.287434)[0m   [0mDROP TABLE people[0m
+
+  [4;36;1mSQL (0.310335)[0m   [0;1mCREATE TABLE people ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.297605)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000203)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.357434)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.454659)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.287582)[0m   [0mDROP TABLE people[0m
+
+  [4;36;1mSQL (0.287925)[0m   [0;1mCREATE TABLE people ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.297611)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
+  [4;36;1mSQL (0.000206)[0m   [0;1mselect sqlite_version(*)[0m
+
+  [4;35;1mSQL (0.320343)[0m   [0mDROP TABLE companies[0m
+
+  [4;36;1mSQL (0.287903)[0m   [0;1mCREATE TABLE companies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.287529)[0m   [0mDROP TABLE people[0m
+
+  [4;36;1mSQL (0.276948)[0m   [0;1mCREATE TABLE people ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "street" varchar(255) DEFAULT NULL, "zip" varchar(255) DEFAULT NULL) [0m
+
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+
+  [4;36;1mSQL (0.297479)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+
