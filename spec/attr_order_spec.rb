@@ -30,8 +30,12 @@ describe Company, ".ordered_attributes" do
      Company.ordered_attributes.should == [:name, :street, :zip, :city]
    end
    
-   it "should return custom attributes" do
+   it "should return custom attributes, when passed as array" do
      Company.ordered_attributes([:street, :zip, :city]).should == [:street, :zip, :city]
+   end
+   
+   it "should return custom attributes, when passed as arguments" do
+     Company.ordered_attributes(:street, :zip, :city).should == [:street, :zip, :city]
    end
 
 end
@@ -62,8 +66,12 @@ describe Person, ".ordered_attributes with group in group" do
      Person.ordered_attributes([:address]).should == [:street, :zip, :city]
    end
    
-   it "should return group in group attributes" do
+   it "should return group in group attributes, when passed as array" do
      Person.ordered_attributes([:all]).should == [:street, :zip, :city, :name]
+   end
+   
+   it "should return group in group attributes,  when passed as argument" do
+     Person.ordered_attributes(:all).should == [:street, :zip, :city, :name]
    end
 
 end

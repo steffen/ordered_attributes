@@ -8,10 +8,10 @@ module ActiveAttributes #:nodoc:
     
     def attr_order(*attributes)
       class << self
-        attr_accessor :original_ordered_attributes
+        attr_accessor :default_ordered_attributes
 
-        def ordered_attributes(custom_attributes = nil)
-          ordered_attributes = custom_attributes || self.original_ordered_attributes
+        def ordered_attributes(*custom_attributes)
+          ordered_attributes = custom_attributes.empty? ? self.default_ordered_attributes : custom_attributes.flatten
           attributes = []
           ordered_attributes.each do |attribute|
             if self.respond_to?(:attribute_groups) && childs = self.attribute_groups[attribute]
@@ -24,7 +24,7 @@ module ActiveAttributes #:nodoc:
         end
       end
 
-      self.original_ordered_attributes = attributes
+      self.default_ordered_attributes = attributes
       
     end
     
