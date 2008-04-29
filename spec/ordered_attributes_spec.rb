@@ -30,8 +30,12 @@ describe Company, ".ordered_attributes" do
      Company.ordered_attributes.should == [:name, :street, :zip, :city]
    end
    
-   it "should return custom attributes, when passed as array" do
+   it "should return custom attributes, when passed as array of symbols" do
      Company.ordered_attributes([:street, :zip, :city]).should == [:street, :zip, :city]
+   end
+   
+   it "should return custom attributes, when passed as array of strings" do
+     Company.ordered_attributes(%w(street zip city)).should == [:street, :zip, :city]
    end
    
    it "should return custom attributes, when passed as arguments" do
@@ -46,7 +50,8 @@ class Person < ActiveRecord::Base
   attr_order :name, :street, :zip, :city
   
   attr_groups :address => [:street, :zip, :city],
-              :all => [:address, :name]
+              :birth => %w(date_of_birth place_of_birth),
+              :all => [:name, :address, :birth]
   
 end
 
@@ -66,12 +71,16 @@ describe Person, ".ordered_attributes with group in group" do
      Person.ordered_attributes([:address]).should == [:street, :zip, :city]
    end
    
-   it "should return group in group attributes, when passed as array" do
-     Person.ordered_attributes([:all]).should == [:street, :zip, :city, :name]
+   it "should return group attributes and convert the attribute names to symbols" do
+     Person.ordered_attributes(:birth).should == [:date_of_birth, :place_of_birth]
    end
    
-   it "should return group in group attributes,  when passed as argument" do
-     Person.ordered_attributes(:all).should == [:street, :zip, :city, :name]
+   it "should return group in group attributes, when passed as array" do
+     Person.ordered_attributes([:all]).should == [:name, :street, :zip, :city, :date_of_birth, :place_of_birth]
+   end
+   
+   it "should return group in group attributes, when passed as argument" do
+     Person.ordered_attributes(:all).should == [:name, :street, :zip, :city, :date_of_birth, :place_of_birth]
    end
 
 end

@@ -14,6 +14,7 @@ module OrderedAttributes #:nodoc:
           ordered_attributes = custom_attributes.empty? ? self.default_ordered_attributes : custom_attributes.flatten
           attributes = []
           ordered_attributes.each do |attribute|
+            attribute = attribute.to_sym
             if self.respond_to?(:attribute_groups) && childs = self.attribute_groups[attribute]
               attributes.concat(self.ordered_attributes(childs))
             else
