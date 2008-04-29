@@ -11,7 +11,7 @@ module OrderedAttributes #:nodoc:
         attr_accessor :default_ordered_attributes
 
         def ordered_attributes(*custom_attributes)
-          ordered_attributes = custom_attributes.empty? ? self.default_ordered_attributes : custom_attributes.flatten
+          ordered_attributes = custom_attributes.flatten.empty? ? self.default_ordered_attributes : custom_attributes.flatten
           attributes = []
           ordered_attributes.each do |attribute|
             attribute = attribute.to_sym
@@ -25,7 +25,7 @@ module OrderedAttributes #:nodoc:
         end
       end
 
-      self.default_ordered_attributes = attributes
+      self.default_ordered_attributes = attributes.flatten
       
     end
     
