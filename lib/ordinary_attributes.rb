@@ -13,27 +13,14 @@ module ActiveAttributes #:nodoc:
         def ordered_attributes(custom_attributes = nil)
           ordered_attributes = custom_attributes || self.original_ordered_attributes
           attributes = []
-          ordered_attributes.each do |attr|
-            if childs = self.attribute_childs(attr)
-              if childs.is_a? Array
-                childs.each do |child|
-                  attributes << child
-                end
-              else
-                attributes << childs
-              end
+          ordered_attributes.each do |attribute|
+            if self.respond_to?(:attribute_groups) && childs = self.attribute_groups[attribute]
+              attributes.concat(self.ordered_attributes(childs))
+            else
+              attributes << attribute
             end
           end
           attributes
-        end
-        
-        def attribute_childs(attribute)
-          if self.attribute_groups
-            if childs = self.attribute_groups[attribute]
-              return childs
-            end
-          end
-          attribute
         end
       end
 
