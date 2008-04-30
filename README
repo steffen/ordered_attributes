@@ -1,13 +1,33 @@
 OrderedAttributes
 ================
 
-Introduction goes here.
+This Ruby on Rails plugin provides a way to order ActiveRecord attributes for using them for csv exports or automated table generation.
 
 
 Example
 =======
 
-Example goes here.
+class Person < ActiveRecord::Base
+  
+  attr_order :name, :street, :zip, :city
+  
+  attr_groups :address => [:street, :zip, :city],
+              :birth => [:date_of_birth, :place_of_birth], // you can use %w(date_of_birth place_of_birth) as well
+              :all => [:name, :address, :birth]
+  
+end
+
+Use the ordered_attributes method to get the ordered attributes:
+
+Person.ordered_attributes
+=> [:name, :street, :zip, :city]
+
+Person.ordered_attributes(:all)
+=> [:name, :street, :zip, :city, :date_of_birth, :place_of_birth]
+
+
+See spec/ordered_attributes_spec.rb for more Examples!
+
 
 
 Copyright (c) 2008 Steffen Hiller, released under the MIT license
