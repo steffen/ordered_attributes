@@ -1,4 +1,4 @@
-OrderedAttributes
+Ordered Attributes
 ================
 
 This Ruby on Rails plugin provides a way to order ActiveRecord attributes for using them for csv exports or automated table generation.
@@ -7,11 +7,11 @@ This Ruby on Rails plugin provides a way to order ActiveRecord attributes for us
 Installation
 ============
 
-git clone git://github.com/steffen/ordered-attributes.git vendor/plugins/ordered_attributes
+git clone git://github.com/steffen/ordered_attributes.git vendor/plugins/ordered_attributes
 
 or if you are on edge rails
 
-script/plugin install git://github.com/steffen/ordered-attributes.git
+script/plugin install git://github.com/steffen/ordered_attributes.git
 
 
 Example
